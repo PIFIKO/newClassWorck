@@ -9,13 +9,14 @@ const News = () => {
         height: 80,
         display: 'inline-block',
         margin: '0 8px',
-        'border-radius': 12
+        borderRadius: 12
     };
 
   return (
     <Carousel
     showThumbs= {false}
     infiniteLoop ={true}
+    
     statusFormatter={(current, total) => ` ${current} /  ${total}`}
     renderIndicator={(onClickHandler, isSelected, index, label) => {
         if (isSelected) {
@@ -24,7 +25,8 @@ const News = () => {
                     style={{ 
                         ...indicatorStyles, 
                         background: 'rgba(255, 255, 255, 0.32)', 
-                        'box-shadow': '0 6 16 rgba(0, 0, 0, 0.16)'}}
+                        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
+                    }}
                     aria-label={`Selected: ${label} ${index + 1}`}
                     title={`Selected: ${label} ${index + 1}`}
                     >     
@@ -36,6 +38,7 @@ const News = () => {
                     
             );
         }
+        
         return (  
             <li
             style={indicatorStyles}
@@ -57,22 +60,22 @@ const News = () => {
     }}
     >
         <div>
-            <h1 className={style.description}>Андрій Єрмак: «В нас інші прізвища, ніж у творців Мінських угод. Людей, які б таке допускали, в нашій команді немає»</h1>
-             <img src="/img.jpg" />
+            <h1 className={style.description}>Андрій Єрмак: «В нас інші прізвища, ніж у творців Мінських угод. Людей, які б таке допускали, в нашій <br /> команді немає»</h1>
+                <img src="/img.jpg" />
         </div>
         <div>
             <h1 className={style.description}>Андрій Єрмак: «В нас інші прізвища, ніж у творців Мінських угод. Людей, які б таке допускали, в нашій команді немає»</h1>
-             <img src="/img.jpg" />
+                <img src="/img.jpg" />
         </div>
         <div>
             <a href=""><h1 className={style.description}>Андрій Єрмак: «В нас інші прізвища, ніж у творців Мінських угод. Людей, які б таке допускали, в нашій команді немає»</h1></a>
-             <img src="/img.jpg" />
+                <img src="/img.jpg" />
         </div>
         <div>
             <h1 className={style.description}>Андрій Єрмак: «В нас інші прізвища, ніж у творців Мінських угод. Людей, які б таке допускали, в нашій команді немає»</h1>
-             <img src="/img.jpg" />
+                <img src="/img.jpg" />
         </div>
-        
+     
     </Carousel>
 );
 };

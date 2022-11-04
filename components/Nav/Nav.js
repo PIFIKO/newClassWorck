@@ -28,7 +28,10 @@ const Nav = () =>{
                     ))}
                 </ul>
                 <div className={style.live}>
-                    <img src='/svg/dot.svg' alt="live" />
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle className={style.dotOne} cx="6" cy="6.5" r="6" fill="#E04646" fill-opacity="0.6"/>
+                    <circle className={style.dotTwo} cx="6" cy="6.5" r="3" fill="#E04646"/>
+                </svg>
                     <div className={style.liveDescri}>LIVE</div>
                 </div>
             </div>
