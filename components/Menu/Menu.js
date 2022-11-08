@@ -24,7 +24,7 @@ const Menu = () =>{
                         <input className ={style.serchIn} type="text" name="serchNews" placeholder="Пошук новин"/>
                     </form>
                     <div className = {style.social}>
-                        <a href=""><img src='/svg/Telegramlogo.svg' alt="" /></a>
+                        <a href=""><img src='/svg/TelegramlogoGre.svg' alt="" /></a>
                         <a href=""><img src='/svg/Facebook.svg' alt="" /></a>
                         <a href=""><img src='/svg/Instagram logo.svg' alt="" /></a>
                         <a href=""><img src='/svg/YouTube logo.svg' alt="" /></a>

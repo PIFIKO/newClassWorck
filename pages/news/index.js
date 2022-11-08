@@ -8,7 +8,6 @@ const News = () => {
         width: 304,
         height: 80,
         display: 'inline-block',
-        margin: '0 8px',
         borderRadius: 12
     };
 

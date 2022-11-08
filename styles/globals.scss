@@ -39,12 +39,16 @@ body {
   padding: 0;
   margin: 0;
 }
-
+main,
+footer{
+    background: #F7F7F7;
+}
 * {
     font-family: 'TT Severs';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 ul,
@@ -78,7 +82,9 @@ p {
     margin: 0;
     padding: 0;
 }
-
+hr{
+    border: 1px solid #EBEBEB;
+}
 
 
 

@@ -42,27 +42,30 @@
 }
 
 .carousel .control-prev.control-arrow {
-    left: 12px;
+    left: 64px;
 }
 
 .carousel .control-prev.control-arrow:before {
-    border-right: 8px solid #fff
+    content: '<';
 }
 
 .carousel .control-next.control-arrow {
-    left: 125px;
+    left: 187px;
 }
 
 .carousel .control-next.control-arrow:before {
-    border-left: 8px solid #fff
+    content: '>';
 }
 
 .carousel-root {
-    outline: none
+    outline: none;
+    width: 1440px;
+    height: 654px;
+    margin: 0 auto;
 }
 
 .carousel {
-    position: relative;
+    position: absolute;
     width: 100%
 }
 
@@ -267,12 +270,13 @@
 
 .carousel .control-dots {
     position: absolute;
-    bottom: 0;
-    margin: 10px 0;
-    padding: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 518px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 1312px;
+    height: 80px;
     z-index: 1;
 }
 
@@ -282,7 +286,7 @@
     }
 }
 
-.carousel .control-dots .dot {
+.caooousel .control-dots .dot {
     -webkit-transition: opacity .25s ease-in;
     -moz-transition: opacity .25s ease-in;
     -ms-transition: opacity .25s ease-in;
@@ -309,7 +313,7 @@
 .carousel .carousel-status {
     position: absolute;
     top: 460px;
-    left: 70px;
+    left: 128px;
     padding: 5px;
     font-size: 14px;
     line-height: 140%;
