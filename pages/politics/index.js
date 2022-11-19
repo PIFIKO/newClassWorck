@@ -36,7 +36,34 @@ const Politics = () => (
           </div>
           <button className ={style.allCols}>Всі колонки</button>
         </div>
-        <div className={style.politics}></div>
+        <div className={style.politics}>
+          <div className={style.wrapperCol}>
+            <div className={style.title}>Політика</div>
+            <button className={style.allCol}>Всі новини розділу</button>
+          </div>
+          <div className={style.wrapperPolNews}>
+            <div className={style.bigNews}>
+              <img src="/image.jpg" alt="image" />
+              <div className={style.timeBig}>05 серпня 11:00</div>
+              <div className={style.bigTitle}>У "Слузі" пояснили, чому в росії знову заговорили про переговори з Україною.</div>
+            </div>
+            <div className={style.litNews}>
+              <div className={style.litNewsCard}>
+                <img src="/image.jpg" alt="image" />
+                <div className={style.timeBig}>05 серпня 11:00</div>
+                <div className={style.litTitle}>У "Слузі" пояснили, чому в росії знову заговорили про переговори з Україною.</div>
+              </div>
+              <div className={style.litNewsCard}>
+                <img src="/image.jpg" alt="image" />
+                <div className={style.timeBig}>05 серпня 11:00</div>
+                <div className={style.litTitle}>У "Слузі" пояснили, чому в росії знову заговорили про переговори з Україною.</div>
+              </div>
+            </div>
+            <div className={style.colNews}>
+              <div className={style.colNewsTitle}>Новини розділу</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
